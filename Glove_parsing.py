@@ -3,7 +3,7 @@
 """
 Created on Sun May 20 21:27:43 2018
 
-@author: sanzee
+@author: Muhammad Rifayat Samee (sanzee)
 """
 
 import numpy as np
