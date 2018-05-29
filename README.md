@@ -13,7 +13,7 @@ Main architecture is the same: Embedding-->BILSTM--->Softmax.
 However, this model adds character embeddings.
 
 Performance : 97.47% (Accuracy)
-# Models will be added in future
+# More Models will be added in future
 
 # Dependencies
 python 3.x
