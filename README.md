@@ -12,10 +12,12 @@ Main architecture is the same: Embedding-->BILSTM--->Softmax.
 
 However, this model adds character embeddings.
 
-Performance : 97.33% (Accuracy)
+Performance : 97.47% (Accuracy)
 # Models will be added in future
 
 # Dependencies
 python 3.x
 
 Pytorch 0.4
+# About Data Set
+Penn Tree Bank data set is not publicly available. So i can not upload the dataset. However, I have added sample data in the data section. Given data was processed from Conll dataset.
