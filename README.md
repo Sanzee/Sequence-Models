@@ -1,5 +1,5 @@
-# Sequence-to-Sequence-Models
-Neural Sequence to Sequence Modeling
+# Neural Sequence-to-Sequence-Models
+ 
 Currently Two seq2seq models are implemented. All performance was measured on Penn Tree Bank Dataset for POS Tagging.
 # seq2seq_model_1.py
 This model uses pre-trained word vectors (glove).
