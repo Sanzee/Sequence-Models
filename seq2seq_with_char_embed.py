@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu May 24 01:33:21 2018
-
-@author: sanzee
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
 Created on Sat May 19 20:15:54 2018
 
 @author: Muhammad Rifayat Samee (sanzee)
