@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu May 24 01:33:21 2018
-
-@author: sanzee
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
 Created on Sat May 19 20:15:54 2018
 
 @author: Muhammad Rifayat Samee (sanzee)
@@ -44,22 +36,22 @@ dropout_lstm = 0.55
 dropout_char = 0
 ### end ####
 ###
-Glove_parser("glove.6B/glove.6B.100d.txt",100).save_glove("globe100d.pkl")
-#word2vec dict is saved as globe100d.pkl (if not run the previous line)
+#Glove_parser("glove.6B/glove.6B.100d.txt",100).save_glove("globe100d.pkl")
+#word2vec dict is save as globe100d.pkl (if not run the previous line)
 
 ###
 #### Other Global ####
 best_acc = 0
 ####              ####
 if 'vocab' not in globals():
-    vocab = Vocab("data/all.txt")
+    vocab = Vocab("data/PennTreeBank/all.txt")
     vocab.add_new_word('<pad>')
     vocab.add_new_label('<pad>')
     pad_val = vocab._word2index['<pad>']
     pad_lebel = vocab._label2index['<pad>']
 
-    train_data = DataSet("data/train.txt",vocab._word2index,vocab._label2index,vocab._char2index).get_data()
-    test_data = DataSet("data/test.txt",vocab._word2index,vocab._label2index,vocab._char2index).get_data()
+    train_data = DataSet("data/PennTreeBank/train.txt",vocab._word2index,vocab._label2index,vocab._char2index).get_data()
+    test_data = DataSet("data/PennTreeBank/test.txt",vocab._word2index,vocab._label2index,vocab._char2index).get_data()
 
 def next_batch(total_sample,iteration,batch_size=100):
     start_idx = iteration*batch_size
@@ -108,6 +100,7 @@ def test_evalution(batch_size=10):
     local_acc = corrected/total
     if local_acc > best_acc + 1e-12:
         best_acc = local_acc
+        torch.save(Model,"best_model")
     print("evaluated completed !! Acc : {}".format(local_acc))
     Model.train(True)
     return
