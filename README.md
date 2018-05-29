@@ -20,4 +20,4 @@ python 3.x
 
 Pytorch 0.4
 # About Data Set
-Penn Tree Bank data set is not public. So i can not upload the dataset. However, I have added sample data in the data section. Given data was processed from Conll dataset.
+Penn Tree Bank data set is not public. So i can not upload the dataset. However, I have added sample data in the data section. Given data was processed from Conll dataset for POS tagging. Note that, datasets are tab separeted.
