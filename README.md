@@ -1,6 +1,6 @@
 # Neural Sequence Models
  
-Currently Two Seuence models are implemented. All performance was measured on Penn Tree Bank Dataset for POS Tagging.
+Currently Two Sequence models are implemented. Performance was measured on Penn Tree Bank Dataset for POS Tagging.
 # seq2seq_model_1.py
 This model uses pre-trained word vectors (glove).
 
@@ -20,4 +20,4 @@ python 3.x
 
 Pytorch 0.4
 # About Data Set
-Penn Tree Bank data set is not public. So i can not upload the dataset. However, I have added sample data in the data section. Given data was processed from Conll dataset for POS tagging. Note that, datasets are tab separeted.
+Penn Tree Bank data set is not public. So I can not upload the dataset. However, I have added sample data in the data section. Given data was processed from Conll dataset for POS tagging. Note that, datasets are tab separeted.
