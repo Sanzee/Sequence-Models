@@ -1,13 +1,13 @@
 # Neural Sequence-to-Sequence-Models
  
 Currently Two seq2seq models are implemented. All performance was measured on Penn Tree Bank Dataset for POS Tagging.
-# seq2seq_model_1.py
+# seq_model_1.py
 This model uses pre-trained word vectors (glove).
 
 Model architecture is Embedding ---> BILSTM --->Softmax
 
 Performance : 95.48% (Accuracy)
-# seq2seq_with_char_embed.py
+# seq_with_char_embed.py
 Main architecture is the same: Embedding-->BILSTM--->Softmax.
 
 However, this model adds character embeddings.
