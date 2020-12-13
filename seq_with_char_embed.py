@@ -3,7 +3,7 @@
 """
 Created on Sat May 19 20:15:54 2018
 
-@author: Muhammad Rifayat Samee (sanzee)
+@author: Rifayat Samee (sanzee)
 
 Model :
     Embedding ---> BILSTM ---->Softmax
